@@ -28,6 +28,27 @@ namespace el_programa_del_loco
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            int count = dataGridView1.Rows.Count;
+
+
+            for (int i = 0; i <= count - 3; i++)
+            {
+
+                if (dataGridView1.Rows[i].Cells[0].Value.ToString() == dataGridView1.Rows[count - 2].Cells[0].Value.ToString())
+                {
+
+                    txtrepetidos.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                }
+            }
+        }
+
         public double dinero1;
         public double dinero2;
         public double dinero3;

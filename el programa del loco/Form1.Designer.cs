@@ -51,6 +51,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtrepetidos = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,6 +237,8 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(440, 276);
             this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
             // 
             // Column1
             // 
@@ -256,11 +260,32 @@
             this.Column4.HeaderText = "Fecha y hora";
             this.Column4.Name = "Column4";
             // 
+            // txtrepetidos
+            // 
+            this.txtrepetidos.Location = new System.Drawing.Point(766, 368);
+            this.txtrepetidos.Multiline = true;
+            this.txtrepetidos.Name = "txtrepetidos";
+            this.txtrepetidos.ReadOnly = true;
+            this.txtrepetidos.Size = new System.Drawing.Size(77, 30);
+            this.txtrepetidos.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(501, 368);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(259, 30);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Numero que mas se repite";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 428);
+            this.ClientSize = new System.Drawing.Size(886, 476);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtrepetidos);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -315,5 +340,7 @@
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
+        private TextBox txtrepetidos;
+        private Label label10;
     }
 }

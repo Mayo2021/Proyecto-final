@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aura González\\Source\\Repos\\loteriagit\\el programa del loco\\el programa del loco\\el programa del loco.csproj",
+      "projectUniqueName": "C:\\Users\\Aura González\\Source\\Repos\\Proyecto-final\\el programa del loco\\el programa del loco.csproj",
       "projectName": "el programa del loco",
-      "projectPath": "C:\\Users\\Aura González\\Source\\Repos\\loteriagit\\el programa del loco\\el programa del loco\\el programa del loco.csproj",
+      "projectPath": "C:\\Users\\Aura González\\Source\\Repos\\Proyecto-final\\el programa del loco\\el programa del loco.csproj",
       "packagesPath": "C:\\Users\\Aura González\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aura González\\Source\\Repos\\loteriagit\\el programa del loco\\el programa del loco\\obj\\",
+      "outputPath": "C:\\Users\\Aura González\\Source\\Repos\\Proyecto-final\\el programa del loco\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
